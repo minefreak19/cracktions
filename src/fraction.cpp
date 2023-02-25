@@ -115,19 +115,23 @@ namespace Cracktions
         return Fraction(f.num, f.den * a);
     }
 
-    Fraction operator+(int64_t a, Fraction f) {
+    Fraction operator+(int64_t a, Fraction f)
+    {
         return f + a;
     }
 
-    Fraction operator - (int64_t a, Fraction f) {
+    Fraction operator-(int64_t a, Fraction f)
+    {
         return a + -f;
     }
 
-    Fraction operator*(int64_t a, Fraction f) {
+    Fraction operator*(int64_t a, Fraction f)
+    {
         return f * a;
     }
 
-    Fraction operator/(int64_t a, Fraction f) {
+    Fraction operator/(int64_t a, Fraction f)
+    {
         return a * f.mult_inv();
     }
 }
